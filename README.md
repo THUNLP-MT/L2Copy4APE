@@ -10,10 +10,11 @@
 * [Evaluation](#Evaluation)
 * [Download](#Download)
 * [Citation](#Citation)
+* [Contact](#Contact)
 
 
 ## Introduction
-This is the code for the paper "Learning to Copy for Automatic Post-Editing" (EMNLP2019). Our paper is not public available now. We will release our paper as soon as possible. The implementation is on top of the open-source NMT toolkit [THUMT](https://github.com/thumt/THUMT). You might need to glance over the user manual of THUMT for knowing the basic usage of THUMT.
+This is the code for the paper "[Learning to Copy for Automatic Post-Editing](https://www.aclweb.org/anthology/D19-1634/)" (EMNLP2019).  The implementation is on top of the open-source NMT toolkit [THUMT](https://github.com/thumt/THUMT). You might need to glance over the user manual of THUMT for knowing the basic usage of THUMT.
 
 ## Prerequisites
 * Python 2.7
@@ -122,10 +123,23 @@ We provide the pre-trained models, you can skip the training process and do infe
 ## Citation
 If you use our codes, please cite our paper:
 ```
-@InProceedings{Huang19L2Copy4APE,
-  author    = {Huang, Xuancheng and Liu, Yang and Luan, Huanbo and Xu, Jingfang and Sun, Maosong},
-  title     = {Learning to Copy for Automatic Post-Editing},
-  booktitle = {Proceedings of EMNLP},
-  year      = {2019},
+@inproceedings{huang-etal-2019-learning,
+    title = "Learning to Copy for Automatic Post-Editing",
+    author = "Huang, Xuancheng  and
+      Liu, Yang  and
+      Luan, Huanbo  and
+      Xu, Jingfang  and
+      Sun, Maosong",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D19-1634",
+    doi = "10.18653/v1/D19-1634",
+    pages = "6124--6134",
+    abstract = "Automatic post-editing (APE), which aims to correct errors in the output of machine translation systems in a post-processing step, is an important task in natural language processing. While recent work has achieved considerable performance gains by using neural networks, how to model the copying mechanism for APE remains a challenge. In this work, we propose a new method for modeling copying for APE. To better identify translation errors, our method learns the representations of source sentences and system outputs in an interactive way. These representations are used to explicitly indicate which words in the system outputs should be copied. Finally, CopyNet (Gu et al., 2016) can be combined with our method to place the copied words in correct positions in post-edited translations. Experiments on the datasets of the WMT 2016-2017 APE shared tasks show that our approach outperforms all best published results.",
 }
 ```
+## Contact
+If you have questions, suggestions and bug reports, please email hxc17@mails.tsinghua.edu.cn.
